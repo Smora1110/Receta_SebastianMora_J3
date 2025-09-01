@@ -2,9 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Receta de Pastel</title>
+  <title>Recetas</title>
+  <style>
+    /* Personalización para listas */
+    ol {
+      margin-bottom: 1em;
+    }
+    ol[type="A"] {
+      list-style-type: upper-alpha; /* Pasos principales receta de pizza */
+    }
+    ol[type="i"] {
+      list-style-type: lower-roman; /* Subpasos receta de pizza */
+    }
+    ul {
+      list-style-type: square; /* Ingredientes con viñetas cuadradas */
+    }
+  </style>
 </head>
 <body>
+  <!-- Receta 1 -->
   <h1>Receta de Pastel de Chocolate</h1>
 
   <h2>Pasos principales</h2>
@@ -35,6 +51,51 @@
     <li>3 minutos</li>
     <li>2 minutos</li>
     <li>1 minuto</li>
+  </ol>
+
+  <hr>
+
+  <!-- Receta 2 -->
+  <h1>Receta de Pizza Casera</h1>
+
+  <h2>Pasos principales</h2>
+  <ol type="A">
+    <li>Preparar los ingredientes
+      <ul>
+        <li>Harina</li>
+        <li>Levadura</li>
+        <li>Agua</li>
+        <li>Queso</li>
+        <li>Tomate</li>
+      </ul>
+    </li>
+    <li>Hacer la masa
+      <ol type="i">
+        <li>Mezclar harina, agua y levadura</li>
+        <li>Amasar durante 10 minutos</li>
+        <li>Dejar reposar 1 hora</li>
+      </ol>
+    </li>
+    <li>Preparar la salsa
+      <ol type="i">
+        <li>Triturar tomates</li>
+        <li>Añadir sal, orégano y aceite</li>
+      </ol>
+    </li>
+    <li>Armar la pizza
+      <ol type="i">
+        <li>Extender la masa</li>
+        <li>Agregar la salsa</li>
+        <li>Colocar queso y toppings al gusto
+          <ul>
+            <li>Jamón</li>
+            <li>Champiñones</li>
+            <li>Pepperoni</li>
+          </ul>
+        </li>
+      </ol>
+    </li>
+    <li>Hornear y servir</li>
   </ol>
 </body>
 </html>
